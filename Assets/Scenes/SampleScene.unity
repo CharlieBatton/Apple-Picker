@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketPrefab: {fileID: 6923844542496024069, guid: f234c3a9f1212aa4184fc054f2b49ca2, type: 3}
-  numBaskets: 3
+  numBaskets: 4
   basketBottomY: -14
   basketSpacingY: 2
   basketList: []
@@ -674,6 +674,10 @@ PrefabInstance:
       propertyPath: applePrefab
       value: 
       objectReference: {fileID: 716616877020118719, guid: fc040c4dd88738149ba14f15251bb65d, type: 3}
+    - target: {fileID: -7925971710120519239, guid: c19b87e14ddecb94b902796d444fe1ce, type: 3}
+      propertyPath: poisonApplePrefab
+      value: 
+      objectReference: {fileID: 716616877020118719, guid: 21ab8ae5167d24b47a892c21d51c7bb3, type: 3}
     - target: {fileID: 7483261867047460457, guid: c19b87e14ddecb94b902796d444fe1ce, type: 3}
       propertyPath: m_Layer
       value: 8
