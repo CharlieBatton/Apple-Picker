@@ -7,7 +7,7 @@ public class ApplePicker : MonoBehaviour
 {
     [Header("Inscribed")]
     public GameObject basketPrefab;
-    public int numBaskets =3;
+    public int numBaskets =4;
     public float basketBottomY = -14f;
     public float basketSpacingY = 2f;
     // Start is called before the first frame update
@@ -41,8 +41,4 @@ public class ApplePicker : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
