@@ -26,8 +26,10 @@ public class ApplePicker : MonoBehaviour
     }
     public void AppleMissed()
     {
-        GameObject[] appleArray =GameObject.FindGameObjectsWithTag("Apple");
-        foreach(GameObject tempGO in appleArray)
+        List<GameObject> itemArray = new List<GameObject>(GameObject.FindGameObjectsWithTag("Apple"));
+        itemArray.AddRange(GameObject.FindGameObjectsWithTag("PoisonApple"));
+        itemArray.AddRange(GameObject.FindGameObjectsWithTag("Branch"));
+        foreach(GameObject tempGO in itemArray)
         {
             Destroy(tempGO);
         }
@@ -37,7 +39,7 @@ public class ApplePicker : MonoBehaviour
         Destroy(basketGo);
         if(basketList.Count == 0)
         {
-            SceneManager.LoadScene("_Scene_0");
+            SceneManager.LoadScene("GameOverScreen");
         }
     }
     // Update is called once per frame

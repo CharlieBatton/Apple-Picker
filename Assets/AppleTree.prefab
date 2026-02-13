@@ -161,11 +161,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1333584e8619ba4ab1a72b36daa962f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
+  applePrefab: {fileID: 716616877020118719, guid: fc040c4dd88738149ba14f15251bb65d, type: 3}
   speed: 2.5
   leftAndRightEdge: 24
   changeDirChance: 0.02
   appleDropDelay: 1.23
+  poisonApplePrefab: {fileID: 716616877020118719, guid: 21ab8ae5167d24b47a892c21d51c7bb3, type: 3}
+  poisonChance: 0.15
+  branchPrefab: {fileID: 2371046062530426186, guid: 8343b5b0dcb3e5c449ef444545ed7693, type: 3}
+  branchChance: 0.05
+  round: 1
+  pointsPerRound: 1000
+  roundText: {fileID: 0}
+  scoreCounter: {fileID: 0}
+  speedIncreasePerRound: 2.5
+  dropDelayDecreasePerRound: 0.3
 --- !u!1 &7483261868458471454
 GameObject:
   m_ObjectHideFlags: 0

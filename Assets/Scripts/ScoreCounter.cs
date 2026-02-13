@@ -9,6 +9,10 @@ public class ScoreCounter : MonoBehaviour
     public int score = 0;
     private Text uiText;
     // Start is called before the first frame update
+
+    // static to store final score between scenes
+    public static int finalScore = 0;
+
     void Start()
     {
         uiText = GetComponent<Text>();
@@ -18,5 +22,6 @@ public class ScoreCounter : MonoBehaviour
     void Update()
     {
         uiText.text = score.ToString("#,0");
+        finalScore = score;
     }
 }
